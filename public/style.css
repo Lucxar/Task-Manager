@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  
+  body {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1rem;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  #create-form {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  #create-form input {
+    flex: 1;
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  #create-form button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  #task-list {
+    list-style: none;
+  }
+  
+  .task-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .task-item.done .title {
+    text-decoration: line-through;
+    color: #666;
+  }
+  
+  .task-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.5rem;
+  }
+  
+  .task-details .title {
+    font-weight: bold;
+  }
+  
+  .task-details .description {
+    font-size: 0.9rem;
+    color: #555;
+  }
+
+.task-item button {
+    margin-left: 0.5rem;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
+
+
+  .task-item input.edit-title,
+.task-item input.edit-desc {
+  flex: 1;
+  margin-right: 0.5rem;
+  padding: 0.4rem;
+  font-size: 1rem;
+}
+
+.task-item button {
+  margin-left: 0.3rem;
+  padding: 0.4rem 0.6rem;
+  cursor: pointer;
+}
+  
+  

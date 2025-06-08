@@ -3,6 +3,8 @@ import { Module } from '@nestjs/common';
 import { ServeStaticModule } from '@nestjs/serve-static';
 import { join } from 'path';
 import { TasksModule } from './tasks/tasks.module';
+import { AppController } from './app.controller';
+import { AppService } from './app.service';
 
 @Module({
   imports: [
@@ -12,6 +14,7 @@ import { TasksModule } from './tasks/tasks.module';
     }),
     TasksModule,
   ],
-
+  controllers: [AppController],
+  providers: [AppService],
 })
 export class AppModule {}
